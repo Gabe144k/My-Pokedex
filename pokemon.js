@@ -1,4 +1,4 @@
-const MAX_POKEMON =151;
+const MAX_POKEMON =251;
 const listWrapper = document.querySelector(".list-wrapper");
 const searchInput = document.querySelector("#search-input");
 const numberFilter = document.querySelector("#number");
@@ -26,7 +26,7 @@ async function fetchPokemonDataBeforeRedirect(id) {
             res.json()
         ),
 
-    ])
+    ]);
     return true;
     } catch (error) {
         console.error("Failed to fetch Pokemon data before redirect");
